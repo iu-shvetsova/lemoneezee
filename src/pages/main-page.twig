@@ -9,9 +9,19 @@
 <div class="main-page">
   <div class="container">
       <div class="row">
-        <div class="col-fluid">
-          <div class="main-page__image-wrapper"></div>
-          <div class="main-page__content-wrapper">
+        <div class="col-fluid main-page__container">
+          <div class="main-page__image-wrapper col-lg-8">
+            {% include '/components/images/images.twig' with 
+              {
+                src:    'lemons',
+                type:   'jpg',
+                alt: 'Лимоны, много лимонов!',
+                class: 'main-page__image',
+                webp: true,
+              }
+            %}
+          </div>
+          <div class="main-page__content-wrapper col-lg-8">
             <h1 class="main-page__title">
               Заголовок главной страницы, который может быть довольно длинным
             </h1>
