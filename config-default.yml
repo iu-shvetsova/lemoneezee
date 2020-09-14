@@ -36,7 +36,7 @@ grid:
     xl: 1200
   breakpointsUnit: px
   layoutMinWidth: 320px
-  columns: 16
+  columns: 8
   gutters:
     wrapper: "(xs: 0, sm: 0, lg: 0)"
     container: false

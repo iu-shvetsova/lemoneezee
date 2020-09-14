@@ -1,18 +1,21 @@
 .site-header
   background-color: #f4f4f4
   
+  +screen-only(md)
+    background-image: linear-gradient(to bottom,#f4f4f4 112px, #ffffff 112px)
+  
   &__content-wrapper 
+    +padding(x, a)
     display: flex
     flex-direction: column
     
     +screen(lg)
-      +padding(x, a)
       flex-direction: row
       justify-content: space-between
       align-items: center
 
   &__logo-wrapper
-    padding: 25px 24px
+    padding: 25px 0
     margin: 0 auto 
 
     +screen(md)
@@ -21,8 +24,8 @@
       padding-bottom: 18px
 
     +screen(lg)
-      padding-left: 0
-      padding-right: 0
+      padding-top: 36px
+      padding-bottom: 31px
 
   &__logo-link
     display: block
@@ -42,15 +45,14 @@
     +screen(md)
       width: 220px
 
+    +screen(lg)
+      width: 150px
+
   &__nav-wrapper
     display: none
 
     +screen(md)
       display: block
-    
-    +screen-only(md)
-      padding: 0 24px
-      background-color: #ffffff; 
 
 
   &__nav-list

@@ -1,17 +1,19 @@
-{% set navItems = [
-  {
-    title: 'Портфолио',
-    link: '#'
-  },
-  {
-    title: 'О компании',
-    link: '#'
-  },
-  {
-    title: 'Контакты',
-    link: '#'
-  }
-] %}
+{% set navItems = 
+  [
+    {
+      title: 'Портфолио',
+      link: '#'
+    },
+    {
+      title: 'О компании',
+      link: '#'
+    },
+    {
+      title: 'Контакты',
+      link: '#'
+    }
+  ] 
+%}
 
 {%- if class is defined and class != '' -%} {%- set classCompiled =
 classCompiled ~ ' ' ~ class -%} {%- endif -%}
