@@ -67,12 +67,11 @@ spacers:
   
 typography:
   fontsInclude:
-    Roboto: 400
-  fontsGoogle:
-    PT Serif: "https://fonts.googleapis.com/css?family=PT+Serif&display=swap"
-  fontMain:       Roboto
+    "Consolas-Regular": 400
+    "Consolas-Bold": 700
+  fontMain:       "Consolas-Regular"
   fontStyle:      "sans-serif"
-  htmlFontSize:   16px
+  htmlFontSize:   12px
   fontSizeBase:   1rem
   lineHeightBase: 1.5
   fontWeightBase: normal

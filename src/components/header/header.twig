@@ -1,0 +1,4 @@
+{%- if class is defined and class != '' -%} {%- set classCompiled =
+classCompiled ~ ' ' ~ class -%} {%- endif -%}
+
+<header class="site-header{{ classCompiled }}"></header>
