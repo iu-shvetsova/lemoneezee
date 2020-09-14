@@ -2,19 +2,20 @@
 <html lang="ru" class="no-js" data-scheme="default">
 
 <head>
-{% include '/includes/head.twig' with {title: title, css: css} %}
+  {% include '/includes/head.twig' with {title: title, css: css} %}
 </head>
 
 <body>
+  
+  <div class="wrapper">
+    {% include '/components/header/header.twig' with {class: ''} %}
 
-<div class="wrapper">
+    {% block content %}
+    {% endblock %}
 
-{% block content %}
-{% endblock %}
+  </div>
 
-</div>
-
-{% include '/includes/scripts.twig' with {js: js} %}
+  {% include '/includes/scripts.twig' with {js: js} %}
 
 </body>
 </html>

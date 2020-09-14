@@ -1,0 +1,37 @@
+{% extends '/layouts/layout-example.twig' %}
+{% set title = 'Page Example' %}
+{% set cssLibs = ['mylib'] %}
+{% set jsCmps = [] %}
+{% set jsLibs = [] %}
+
+{% block content %}
+
+<div class="main-page">
+  <div class="container">
+      <div class="row">
+        <div class="col-fluid">
+          <div class="main-page__image-wrapper"></div>
+          <div class="main-page__content-wrapper">
+            <h1 class="main-page__title">
+              Заголовок главной страницы, который может быть довольно длинным
+            </h1>
+            <p class="main-page__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            {% include '/components/buttons/buttons.twig' with 
+              {
+                class: 'main-page__button', 
+                text: 'Купить лимоны',
+                icon: 'check',
+                style: 'brand',
+                iconType: 'side',
+                size: 'small'
+              } only
+            %}
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+{% endblock %}

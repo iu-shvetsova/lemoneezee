@@ -2,15 +2,15 @@
 /* Colors */
 $c-white: #ffffff
 $c-black: #0b0b0b
-$c-brand: #fff500
-$c-accent: rgb(56, 188, 25)
+$c-brand: #ffe600
+$c-accent: #00e44e
 $c-success: hsl(136, 79%, 45%)
 $c-warning: #dae21e
 $c-danger: #e80f0f
 $c-info: #0080ff
 $c-interactive: #178ee5
 $base-adjust-steps: 10
-$map-color-schemes: (default: (brand: #fff500, accent: rgb(56, 188, 25), success: hsl(136, 79%, 45%), warning: #dae21e, danger: #e80f0f, info: #0080ff, interactive: #178ee5), alternative: (brand: #0089ff, success: #4fc970, warning: #b1b907, danger: #ea3838, info: #237cd4))
+$map-color-schemes: (default: (brand: #ffe600, accent: #00e44e, success: hsl(136, 79%, 45%), warning: #dae21e, danger: #e80f0f, info: #0080ff, interactive: #178ee5), alternative: (brand: #0089ff, success: #4fc970, warning: #b1b907, danger: #ea3838, info: #237cd4))
 $scheme-adjust-steps: 5
 $color-guides: #ff0080
 /* Grid */  
@@ -30,11 +30,11 @@ $bpts: (xs: $xs, sm: $sm, md: $md, lg: $lg, xl: $xl)
 $bpts-max: (xs: $xs-max, sm: $sm-max, md: $md-max, lg: $lg-max, xl: $xl-max)
 $layout-min-width: 320px
 $grid-columns: 16
-$wrapper-gutters: (xs: 16px, sm: 0, lg: 32px)
+$wrapper-gutters: (xs: 0, sm: 0, lg: 0)
 $container-gutters: false
 $row-gutters: false
 $col-gutters: (xs: 8px, md: 16px)
-$fix-wrapper-width: (md, xl)
+$fix-wrapper-width: false
 $map-rotate-back: false
 /* Spacers */  
 $spacer: 8px
@@ -44,9 +44,9 @@ $row-default-margin-y: (b: y)
 $col-default-margin-y: false
 $default-col-padding: false 
 /* Typography */
-$fonts-include: ('Consolas-Regular': 400, 'Consolas-Bold': 700)  
+$fonts-include: ('Consolas': 400, 'Consolas-Bold': 700)  
 $fonts-google: ()
-$font-main: Consolas-Regular
+$font-main: Consolas
 $font-style: sans-serif
 $html-font-size: 12px
 $font-size-base: 1rem

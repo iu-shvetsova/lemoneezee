@@ -1,4 +1,38 @@
+{% set navItems = [
+  {
+    title: 'Портфолио',
+    link: '#'
+  },
+  {
+    title: 'О компании',
+    link: '#'
+  },
+  {
+    title: 'Контакты',
+    link: '#'
+  }
+] %}
+
 {%- if class is defined and class != '' -%} {%- set classCompiled =
 classCompiled ~ ' ' ~ class -%} {%- endif -%}
 
-<header class="site-header{{ classCompiled }}"></header>
+<header class="site-header{{ classCompiled }}">
+  <div class="site-header__content-wrapper">
+    <div class="site-header__logo-wrapper">
+      <a href="/" class="site-header__logo-link">
+        <img class="site-header__logo-image" src="assets/img/logo.svg" width="104" height="31" alt="Eezee Peezee">
+      </a>
+    </div>
+    <nav class="site-header__nav-wrapper">
+      <ul class="site-header__nav-list">
+        {% for item in navItems %}
+        <li class="site-header__nav-item">
+          <a class="site-header__nav-link" href="{{ item.link }}">
+            {{ item.title }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

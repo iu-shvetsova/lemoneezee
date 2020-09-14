@@ -7,8 +7,8 @@ colors:
   baseAdjustSteps: 10
   schemes:
     default:
-      brand:       "#fff500"
-      accent:      "rgb(56, 188, 25)"
+      brand:       "#ffe600"
+      accent:      "#00e44e"
       success:     "hsl(136, 79%, 45%)"
       warning:     "#dae21e"
       danger:      "#e80f0f"
@@ -38,11 +38,11 @@ grid:
   layoutMinWidth: 320px
   columns: 16
   gutters:
-    wrapper: "(xs: 16px, sm: 0, lg: 32px)"
+    wrapper: "(xs: 0, sm: 0, lg: 0)"
     container: false
     row: false
     col: "(xs: 8px, md: 16px)"
-  fixWrapperWidth: "(md, xl)"
+  fixWrapperWidth: false
   rotateBackMap: false
   
   
@@ -67,9 +67,9 @@ spacers:
   
 typography:
   fontsInclude:
-    "Consolas-Regular": 400
+    "Consolas": 400
     "Consolas-Bold": 700
-  fontMain:       "Consolas-Regular"
+  fontMain:       "Consolas"
   fontStyle:      "sans-serif"
   htmlFontSize:   12px
   fontSizeBase:   1rem
