@@ -6,40 +6,36 @@
 
 {% block content %}
 
-<div class="container">
-  <div class="row">
-    <div class="main-page">
-      <div class="main-page__container">
-        <div class="main-page__image-wrapper col-lg-4">
-          {% include '/components/images/images.twig' with 
-            {
-              src: 'lemons',
-              type: 'jpg',
-              alt: 'Лимоны, много лимонов!',
-              class: 'main-page__image',
-              webp: true,
-            }
-          %}
-        </div>
-        <div class="main-page__content-wrapper col-lg-4">
-          <h1 class="main-page__title">
-            Заголовок главной страницы, который может быть довольно длинным
-          </h1>
-          <p class="main-page__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          {% include '/components/buttons/buttons.twig' with 
-            {
-              class: 'main-page__button', 
-              text: 'Купить лимоны',
-              icon: 'check',
-              style: 'brand',
-              iconType: 'side',
-              size: 'small'
-            } only
-          %}
-        </div>
-      </div>
+<div class="main-page">
+  <div class="main-page__container">
+    <div class="main-page__image-wrapper col-lg-7">
+      {% include '/components/images/images.twig' with 
+        {
+          src: 'lemons',
+          type: 'jpg',
+          alt: 'Лимоны, много лимонов!',
+          class: 'main-page__image',
+          webp: true,
+        }
+      %}
+    </div>
+    <div class="main-page__content-wrapper col-lg-8">
+      <h1 class="main-page__title">
+        Заголовок главной страницы, который может быть довольно длинным
+      </h1>
+      <p class="main-page__description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      {% include '/components/buttons/buttons.twig' with 
+        {
+          class: 'main-page__button', 
+          text: 'Купить лимоны',
+          icon: 'check',
+          style: 'brand',
+          iconType: 'side',
+          size: 'small'
+        } only
+      %}
     </div>
   </div>
 </div>

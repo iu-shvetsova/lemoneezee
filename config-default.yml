@@ -36,10 +36,10 @@ grid:
     xl: 1200
   breakpointsUnit: px
   layoutMinWidth: 320px
-  columns: 8
+  columns: 16
   gutters:
     wrapper: "(xs: 0, sm: 0, lg: 0)"
-    container: false
+    container: "(xs: 16px, sm: 24px, lg: 64px)"
     row: false
     col: "(xs: 8px, md: 16px)"
   fixWrapperWidth: false
@@ -51,8 +51,8 @@ grid:
 spacers:
   spacer: 8px
   spacerMap:
-    a: "(xs: 2, sm: 3, lg: 8)"
-    b: "(xs: 2, sm: 3)"
+    a: "(xs: 2, sm: 3, lg: 0)"
+    b: "(lg: 8)"
     c: "(xs: 4)"
     d: "(xs: 6)"
     e: "(xs: 10)"

@@ -10,7 +10,7 @@
       height: 100%
       flex-direction: row
       justify-content: space-between
-      +padding(x, a)
+      +padding(x, b)
       
   &__image-wrapper 
     position: relative
@@ -34,11 +34,6 @@
 
     +screen(lg)
       height: auto
-      display: flex
-      justify-content: flex-end
-
-      picture
-        max-width: 87%
       
 
   &__image
@@ -55,7 +50,8 @@
       padding-bottom: 48px
 
     +screen(lg)
-      padding: 110px 0 36px 0
+      padding-top: 110px
+      padding-bottom: 36px
       display: flex
       flex-direction: column
 
@@ -69,7 +65,7 @@
     font-weight: 400
     margin-bottom: 16px
 
-    +screen(sm)
+    +screen(md)
       margin-top: 14px
       margin-bottom: 24px
       font-size: 48px
